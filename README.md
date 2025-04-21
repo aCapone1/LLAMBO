@@ -93,3 +93,10 @@ If our paper or code helped you in your own research, please cite our work as:
     url={https://openreview.net/forum?id=OOxotBmGol}
 }
 ```
+
+## Modifications (Alex)
+To get the repo to work, I changed the engine varible to ENGINE="gpt-3.5-turbo" and used the following envirnment variables:
+
+export OPENAI_API_BASE=https://api.openai.com/v1
+export OPENAI_API_TYPE=openai
+export OPENAI_API_VERSION=2020-11-07

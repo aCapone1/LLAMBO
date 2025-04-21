@@ -4,7 +4,10 @@
 trap "kill -- -$BASHPID" EXIT
 
 # This is the OpenAI LLM Engine
-ENGINE="gpt35turbo_20230727"
+# ENGINE="gpt35turbo_20230727"
+# ENGINE="gpt35turbo_2024-07-18"
+# ENGINE="gpt35turbo"
+ENGINE="gpt-3.5-turbo"
 
 for dataset in "digits" "wine" "diabetes" "iris" "breast"
 do

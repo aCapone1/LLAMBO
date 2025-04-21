@@ -299,7 +299,8 @@ Hyperparameter configuration:"""
                     start_time = time.time()
                     self.rate_limiter.add_request(request_text=user_message, current_time=start_time)
                     resp = await openai.ChatCompletion.acreate(
-                        engine=self.chat_engine,
+                        # engine=self.chat_engine,
+                        model=self.chat_engine,
                         messages=message,
                         temperature=0.8,
                         max_tokens=500,
